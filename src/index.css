@@ -17,7 +17,7 @@
   background-color: #ddd;
 }
 
-button {
+.keyboard button {
   background-color: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
@@ -30,56 +30,15 @@ button {
   justify-content: center;
 }
 
-button:hover {
+.keyboard button:hover {
   background-color: #f6f6f6;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px rgba(0, 0, 0, 0.3);
 }
 
-button:active {
+.keyboard button:active {
   background-color: #eee;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: none;
   transform: translateY(2px);
-}
-
-.delete {
-  grid-column: span 4;
-}
-
-.tab {
-  grid-column: span 3;
-}
-
-.backslash {
-  grid-column: span 3;
-}
-
-.capslock {
-  grid-column: span 4;
-}
-
-.return {
-  grid-column: span 4;
-}
-
-.leftshift {
-  grid-column: span 5;
-}
-
-.rightshift {
-  grid-column: span 5;
-}
-
-.leftctrl {
-  grid-column: span 3;
-}
-
-.command {
-  grid-column: span 3;
-  font-size: 14px;
-}
-
-.space {
-  grid-column: span 13;
 }
