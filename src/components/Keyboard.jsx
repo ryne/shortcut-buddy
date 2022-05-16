@@ -1,68 +1,68 @@
 const Keyboard = () => {
   return (
     <div class="keyboard layout_mac">
-      <button class="key">~</button>
-      <button class="key">1</button>
-      <button class="key">2</button>
-      <button class="key">3</button>
-      <button class="key">4</button>
-      <button class="key">5</button>
-      <button class="key">6</button>
-      <button class="key">7</button>
-      <button class="key">8</button>
-      <button class="key">9</button>
-      <button class="key">0</button>
-      <button class="key">-</button>
-      <button class="key">+</button>
+      <button class="key col-span-2">~</button>
+      <button class="key col-span-2">1</button>
+      <button class="key col-span-2">2</button>
+      <button class="key col-span-2">3</button>
+      <button class="key col-span-2">4</button>
+      <button class="key col-span-2">5</button>
+      <button class="key col-span-2">6</button>
+      <button class="key col-span-2">7</button>
+      <button class="key col-span-2">8</button>
+      <button class="key col-span-2">9</button>
+      <button class="key col-span-2">0</button>
+      <button class="key col-span-2">-</button>
+      <button class="key col-span-2">+</button>
       <button class="key col-span-4">delete</button>
       <button class="key col-span-3">tab</button>
-      <button class="key">Q</button>
-      <button class="key">w</button>
-      <button class="key">E</button>
-      <button class="key">R</button>
-      <button class="key">T</button>
-      <button class="key">Y</button>
-      <button class="key">U</button>
-      <button class="key">I</button>
-      <button class="key">O</button>
-      <button class="key">P</button>
-      <button class="key">[</button>
-      <button class="key">]</button>
+      <button class="key col-span-2">Q</button>
+      <button class="key col-span-2">w</button>
+      <button class="key col-span-2">E</button>
+      <button class="key col-span-2">R</button>
+      <button class="key col-span-2">T</button>
+      <button class="key col-span-2">Y</button>
+      <button class="key col-span-2">U</button>
+      <button class="key col-span-2">I</button>
+      <button class="key col-span-2">O</button>
+      <button class="key col-span-2">P</button>
+      <button class="key col-span-2">[</button>
+      <button class="key col-span-2">]</button>
       <button class="key col-span-3">\</button>
       <button class="modifier col-span-4">caps lock</button>
-      <button class="key">A</button>
-      <button class="key">S</button>
-      <button class="key">D</button>
-      <button class="key">F</button>
-      <button class="key">G</button>
-      <button class="key">H</button>
-      <button class="key">J</button>
-      <button class="key">K</button>
-      <button class="key">L</button>
-      <button class="key">;</button>
-      <button class="key">'</button>
+      <button class="key col-span-2">A</button>
+      <button class="key col-span-2">S</button>
+      <button class="key col-span-2">D</button>
+      <button class="key col-span-2">F</button>
+      <button class="key col-span-2">G</button>
+      <button class="key col-span-2">H</button>
+      <button class="key col-span-2">J</button>
+      <button class="key col-span-2">K</button>
+      <button class="key col-span-2">L</button>
+      <button class="key col-span-2">;</button>
+      <button class="key col-span-2">'</button>
       <button class="modifier col-span-4">return</button>
       <button class="modifier col-span-5">shift</button>
-      <button class="key">Z</button>
-      <button class="key">X</button>
-      <button class="key">C</button>
-      <button class="key">V</button>
-      <button class="key">B</button>
-      <button class="key">N</button>
-      <button class="key">M</button>
-      <button class="key">,</button>
-      <button class="key">.</button>
-      <button class="key">/</button>
+      <button class="key col-span-2">Z</button>
+      <button class="key col-span-2">X</button>
+      <button class="key col-span-2">C</button>
+      <button class="key col-span-2">V</button>
+      <button class="key col-span-2">B</button>
+      <button class="key col-span-2">N</button>
+      <button class="key col-span-2">M</button>
+      <button class="key col-span-2">,</button>
+      <button class="key col-span-2">.</button>
+      <button class="key col-span-2">/</button>
       <button class="modifier col-span-5" title="shift">
         shift
       </button>
-      <button class="modifier" title="fn">
+      <button class="modifier col-span-2" title="fn">
         fn
       </button>
-      <button class="modifier" title="control">
+      <button class="modifier col-span-2" title="control">
         control
       </button>
-      <button class="modifier" title="option">
+      <button class="modifier col-span-2" title="option">
         option
       </button>
       <button class="modifier col-span-3" title="command">
@@ -72,7 +72,7 @@ const Keyboard = () => {
       <button class="modifier col-span-3" title="command">
         command
       </button>
-      <button class="modifier" title="option">
+      <button class="modifier col-span-2" title="option">
         option
       </button>
       <button class="key col-span-1" title="left arrow">
