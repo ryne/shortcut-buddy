@@ -1,5 +1,12 @@
+import { useState, useEffect } from 'react';
+import Keyboard from './components/Keyboard';
+
 const App = () => {
-  return <div></div>;
+  return (
+    <>
+      <Keyboard />
+    </>
+  );
 };
 
 export default App;
