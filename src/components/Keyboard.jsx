@@ -14,7 +14,9 @@ const Keyboard = () => {
       <button class="key col-span-2">0</button>
       <button class="key col-span-2">-</button>
       <button class="key col-span-2">+</button>
-      <button class="key col-span-4">delete</button>
+      <button class="key col-span-4" title="delete">
+        delete
+      </button>
       <button class="key col-span-3">tab</button>
       <button class="key col-span-2">Q</button>
       <button class="key col-span-2">w</button>
@@ -29,7 +31,9 @@ const Keyboard = () => {
       <button class="key col-span-2">[</button>
       <button class="key col-span-2">]</button>
       <button class="key col-span-3">\</button>
-      <button class="modifier col-span-4">caps lock</button>
+      <button class="modifier col-span-4" title="caps lock">
+        caps lock
+      </button>
       <button class="key col-span-2">A</button>
       <button class="key col-span-2">S</button>
       <button class="key col-span-2">D</button>
