@@ -55,7 +55,7 @@ const Keyboard = () => {
         <button className="key col-span-2" title="F12">
           F12
         </button>
-        <button className="key col-span-3 pt-0.5" title="Power button">
+        <button className="key col-span-3" title="Power button">
           <MdPowerSettingsNew className="text-lg" />
         </button>
         <button className="key col-span-2" title="tilde">
