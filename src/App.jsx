@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
-import Keyboard from './components/Keyboard';
+import InputContainer from './components/InputContainer';
+import OutputContainer from './components/OutputContainer';
 
 const App = () => {
   return (
     <>
-      <Keyboard />
+      <InputContainer />
+      <OutputContainer />
     </>
   );
 };
