@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  height: 100vh;
+}
+
 .keyboard {
   grid-template-columns: repeat(30, 23px);
   grid-template-rows: 40px 50px 50px 50px 50px 50px;
@@ -34,4 +38,27 @@
   border: 1px solid rgb(148 163 184);
   box-shadow: none;
   transform: translateY(2px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .keyboard button {
+    background-color: rgb(51 65 85);
+    border-color: rgb(71 85 105);
+    box-shadow: 0 2px rgb(71 85 105);
+  }
+  .keyboard button:focus-visible {
+    background-color: rgba(0, 102, 255, 0.5);
+  }
+  .keyboard button:hover {
+    background-color: rgb(71 85 105);
+    border-color: rgb(100 116 139);
+    box-shadow: 0 2px rgb(100 116 139);
+  }
+
+  .keyboard button:active {
+    background-color: rgb(30 41 59);
+    border-color: rgb(51 65 85);
+    box-shadow: none;
+    transform: translateY(2px);
+  }
 }
