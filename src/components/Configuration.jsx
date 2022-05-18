@@ -9,7 +9,7 @@ const Configuration = ({ keyboardLayout, setOS }) => {
         onClick={() => setOS('mac')}
         className={`toggle_os_mac flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 bg-slate-300 dark:bg-slate-700 dark:text-slate-100 ${
           keyboardLayout !== 'mac'
-            ? 'bg-none bg-slate-200 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-500 hover:dark:text-slate-400'
+            ? 'bg-none bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-500 hover:dark:text-slate-400'
             : ''
         }`}
       >

@@ -16,485 +16,947 @@ import {
 const Keyboard = ({ keyboardLayout }) => {
   if (keyboardLayout == 'mac') {
     return (
-      <div className="keyboard layout_mac grid float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
-        <button className="key col-span-3" title="Esc">
+      <div className="keyboard layout_mac grid grid-cols-[repeat(30,23px)] grid-rows-[40px,50px,50px,50px,50px,50px] float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3"
+          title="Esc"
+        >
           esc
         </button>
-        <button className="key col-span-2" title="F1">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F1"
+        >
           F1
         </button>
-        <button className="key col-span-2" title="F2">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F2"
+        >
           F2
         </button>
-        <button className="key col-span-2" title="F3">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F3"
+        >
           F3
         </button>
-        <button className="key col-span-2" title="F4">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F4"
+        >
           F4
         </button>
-        <button className="key col-span-2" title="F5">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F5"
+        >
           F5
         </button>
-        <button className="key col-span-2" title="F6">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F6"
+        >
           F6
         </button>
-        <button className="key col-span-2" title="F7">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F7"
+        >
           F7
         </button>
-        <button className="key col-span-2" title="F8">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F8"
+        >
           F8
         </button>
-        <button className="key col-span-2" title="F9">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F9"
+        >
           F9
         </button>
-        <button className="key col-span-2" title="F10">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F10"
+        >
           F10
         </button>
-        <button className="key col-span-2" title="F11">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F11"
+        >
           F11
         </button>
-        <button className="key col-span-2" title="F12">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F12"
+        >
           F12
         </button>
-        <button className="key col-span-3" title="Power button">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3"
+          title="Power button"
+        >
           <MdPowerSettingsNew className="text-lg" />
         </button>
-        <button className="key col-span-2" title="tilde">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="tilde"
+        >
           ~
         </button>
-        <button className="key col-span-2" title="1">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="1"
+        >
           1
         </button>
-        <button className="key col-span-2" title="2">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="2"
+        >
           2
         </button>
-        <button className="key col-span-2" title="3">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="3"
+        >
           3
         </button>
-        <button className="key col-span-2" title="4">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="4"
+        >
           4
         </button>
-        <button className="key col-span-2" title="5">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="5"
+        >
           5
         </button>
-        <button className="key col-span-2" title="6">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="6"
+        >
           6
         </button>
-        <button className="key col-span-2" title="7">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="7"
+        >
           7
         </button>
-        <button className="key col-span-2" title="8">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="8"
+        >
           8
         </button>
-        <button className="key col-span-2" title="9">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="9"
+        >
           9
         </button>
-        <button className="key col-span-2" title="0">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="0"
+        >
           0
         </button>
-        <button className="key col-span-2" title="-">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="-"
+        >
           -
         </button>
-        <button className="key col-span-2" title="+">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="+"
+        >
           +
         </button>
-        <button className="key col-span-4 pt-0.5" title="delete">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="delete"
+        >
           <BsFillBackspaceFill />
           delete
         </button>
-        <button className="key col-span-3 pt-0.5" title="tab">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3 pt-0.5"
+          title="tab"
+        >
           <MdKeyboardTab />
           tab
         </button>
-        <button className="key col-span-2" title="q">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="q"
+        >
           Q
         </button>
-        <button className="key col-span-2" title="w">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="w"
+        >
           W
         </button>
-        <button className="key col-span-2" title="e">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="e"
+        >
           E
         </button>
-        <button className="key col-span-2" title="r">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="r"
+        >
           R
         </button>
-        <button className="key col-span-2" title="t">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="t"
+        >
           T
         </button>
-        <button className="key col-span-2" title="y">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="y"
+        >
           Y
         </button>
-        <button className="key col-span-2" title="u">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="u"
+        >
           U
         </button>
-        <button className="key col-span-2" title="i">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="i"
+        >
           I
         </button>
-        <button className="key col-span-2" title="o">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="o"
+        >
           O
         </button>
-        <button className="key col-span-2" title="p">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="p"
+        >
           P
         </button>
-        <button className="key col-span-2" title="left bracket">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="left bracket"
+        >
           [
         </button>
-        <button className="key col-span-2" title="right bracket">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="right bracket"
+        >
           ]
         </button>
-        <button className="key col-span-3" title="backslash">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3"
+          title="backslash"
+        >
           \
         </button>
-        <button className="modifier col-span-4 pt-0.5" title="caps lock">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="caps lock"
+        >
           <BsCapslockFill />
           caps lock
         </button>
-        <button className="key col-span-2" title="a">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="a"
+        >
           A
         </button>
-        <button className="key col-span-2" title="s">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="s"
+        >
           S
         </button>
-        <button className="key col-span-2" title="d">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="d"
+        >
           D
         </button>
-        <button className="key col-span-2" title="f">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="f"
+        >
           F
         </button>
-        <button className="key col-span-2" title="g">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="g"
+        >
           G
         </button>
-        <button className="key col-span-2" title="h">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="h"
+        >
           H
         </button>
-        <button className="key col-span-2" title="j">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="j"
+        >
           J
         </button>
-        <button className="key col-span-2" title="k">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="k"
+        >
           K
         </button>
-        <button className="key col-span-2" title="l">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="l"
+        >
           L
         </button>
-        <button className="key col-span-2" title="semicolon">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="semicolon"
+        >
           ;
         </button>
-        <button className="key col-span-2" title="">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title=""
+        >
           '
         </button>
-        <button className="modifier col-span-4 pt-0.5" title="return">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="return"
+        >
           <MdOutlineKeyboardReturn />
           return
         </button>
-        <button className="modifier col-span-5 pt-0.5" title="shift">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          title="shift"
+        >
           <BsShiftFill />
           shift
         </button>
-        <button className="key col-span-2" title="z">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="z"
+        >
           Z
         </button>
-        <button className="key col-span-2" title="x">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="x"
+        >
           X
         </button>
-        <button className="key col-span-2" title="c">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="c"
+        >
           C
         </button>
-        <button className="key col-span-2" title="v">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="v"
+        >
           V
         </button>
-        <button className="key col-span-2" title="b">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="b"
+        >
           B
         </button>
-        <button className="key col-span-2" title="n">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="n"
+        >
           N
         </button>
-        <button className="key col-span-2" title="m">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="m"
+        >
           M
         </button>
-        <button className="key col-span-2" title="comma">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="comma"
+        >
           ,
         </button>
-        <button className="key col-span-2" title="period">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="period"
+        >
           .
         </button>
-        <button className="key col-span-2" title="slash">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="slash"
+        >
           /
         </button>
-        <button className="modifier col-span-5 pt-0.5" title="shift">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          title="shift"
+        >
           <BsShiftFill />
           shift
         </button>
-        <button className="modifier col-span-2" title="fn">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="fn"
+        >
           fn
         </button>
-        <button className="modifier col-span-2 pt-0.5" title="control">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          title="control"
+        >
           <ImCtrl />
           ctrl
         </button>
-        <button className="modifier col-span-2 pt-0.5" title="option">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          title="option"
+        >
           <BsOption />
           opt
         </button>
-        <button className="modifier col-span-2 pt-0.5" title="command">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          title="command"
+        >
           <BsCommand />
           cmd
         </button>
-        <button className="key col-[span_14]" title="space bar"></button>
-        <button className="modifier col-span-2 pt-0.5" title="command">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-[span_14]"
+          title="space bar"
+        ></button>
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          title="command"
+        >
           <BsCommand />
           cmd
         </button>
-        <button className="modifier col-span-2 pt-0.5" title="option">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          title="option"
+        >
           <BsOption />
           opt
         </button>
-        <button className="key col-span-1" title="left arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="left arrow"
+        >
           &larr;
         </button>
-        <button className="key col-span-1" title="down arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="down arrow"
+        >
           &darr;
         </button>
-        <button className="key col-span-1" title="up arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="up arrow"
+        >
           &uarr;
         </button>
-        <button className="key col-span-1" title="right arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="right arrow"
+        >
           &rarr;
         </button>
       </div>
     );
   } else {
     return (
-      <div className="keyboard layout_win grid float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
-        <button className="key col-span-2" title="Esc">
+      <div className="keyboard layout_win grid grid-cols-[repeat(30,23px)] grid-rows-[40px,50px,50px,50px,50px,50px] float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="Esc"
+        >
           esc
         </button>
-        <button className="key col-span-2 col-start-5" title="F1">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 col-start-5"
+          title="F1"
+        >
           F1
         </button>
-        <button className="key col-span-2" title="F2">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F2"
+        >
           F2
         </button>
-        <button className="key col-span-2" title="F3">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F3"
+        >
           F3
         </button>
-        <button className="key col-span-2" title="F4">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F4"
+        >
           F4
         </button>
-        <button className="key col-span-2 col-start-[14]" title="F5">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 col-start-[14]"
+          title="F5"
+        >
           F5
         </button>
-        <button className="key col-span-2" title="F6">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F6"
+        >
           F6
         </button>
-        <button className="key col-span-2" title="F7">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F7"
+        >
           F7
         </button>
-        <button className="key col-span-2" title="F8">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F8"
+        >
           F8
         </button>
-        <button className="key col-span-2 col-start-[23]" title="F9">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 col-start-[23]"
+          title="F9"
+        >
           F9
         </button>
-        <button className="key col-span-2" title="F10">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F10"
+        >
           F10
         </button>
-        <button className="key col-span-2" title="F11">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F11"
+        >
           F11
         </button>
-        <button className="key col-span-2" title="F12">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="F12"
+        >
           F12
         </button>
-        <button className="key col-span-2" title="tilde">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="tilde"
+        >
           ~
         </button>
-        <button className="key col-span-2" title="1">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="1"
+        >
           1
         </button>
-        <button className="key col-span-2" title="2">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="2"
+        >
           2
         </button>
-        <button className="key col-span-2" title="3">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="3"
+        >
           3
         </button>
-        <button className="key col-span-2" title="4">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="4"
+        >
           4
         </button>
-        <button className="key col-span-2" title="5">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="5"
+        >
           5
         </button>
-        <button className="key col-span-2" title="6">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="6"
+        >
           6
         </button>
-        <button className="key col-span-2" title="7">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="7"
+        >
           7
         </button>
-        <button className="key col-span-2" title="8">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="8"
+        >
           8
         </button>
-        <button className="key col-span-2" title="9">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="9"
+        >
           9
         </button>
-        <button className="key col-span-2" title="0">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="0"
+        >
           0
         </button>
-        <button className="key col-span-2" title="-">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="-"
+        >
           -
         </button>
-        <button className="key col-span-2" title="+">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="+"
+        >
           +
         </button>
-        <button className="key col-span-4 pt-0.5" title="backspace">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="backspace"
+        >
           <BsFillBackspaceFill />
           backspace
         </button>
-        <button className="key col-span-3 pt-0.5" title="tab">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3 pt-0.5"
+          title="tab"
+        >
           <MdKeyboardTab />
           tab
         </button>
-        <button className="key col-span-2" title="q">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="q"
+        >
           Q
         </button>
-        <button className="key col-span-2" title="w">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="w"
+        >
           W
         </button>
-        <button className="key col-span-2" title="e">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="e"
+        >
           E
         </button>
-        <button className="key col-span-2" title="r">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="r"
+        >
           R
         </button>
-        <button className="key col-span-2" title="t">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="t"
+        >
           T
         </button>
-        <button className="key col-span-2" title="y">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="y"
+        >
           Y
         </button>
-        <button className="key col-span-2" title="u">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="u"
+        >
           U
         </button>
-        <button className="key col-span-2" title="i">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="i"
+        >
           I
         </button>
-        <button className="key col-span-2" title="o">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="o"
+        >
           O
         </button>
-        <button className="key col-span-2" title="p">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="p"
+        >
           P
         </button>
-        <button className="key col-span-2" title="left bracket">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="left bracket"
+        >
           [
         </button>
-        <button className="key col-span-2" title="right bracket">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="right bracket"
+        >
           ]
         </button>
-        <button className="key col-span-3" title="backslash">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3"
+          title="backslash"
+        >
           \
         </button>
-        <button className="modifier col-span-4 pt-0.5" title="caps lock">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="caps lock"
+        >
           <BsCapslockFill />
           caps lock
         </button>
-        <button className="key col-span-2" title="a">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="a"
+        >
           A
         </button>
-        <button className="key col-span-2" title="s">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="s"
+        >
           S
         </button>
-        <button className="key col-span-2" title="d">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="d"
+        >
           D
         </button>
-        <button className="key col-span-2" title="f">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="f"
+        >
           F
         </button>
-        <button className="key col-span-2" title="g">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="g"
+        >
           G
         </button>
-        <button className="key col-span-2" title="h">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="h"
+        >
           H
         </button>
-        <button className="key col-span-2" title="j">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="j"
+        >
           J
         </button>
-        <button className="key col-span-2" title="k">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="k"
+        >
           K
         </button>
-        <button className="key col-span-2" title="l">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="l"
+        >
           L
         </button>
-        <button className="key col-span-2" title="semicolon">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="semicolon"
+        >
           ;
         </button>
-        <button className="key col-span-2" title="">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title=""
+        >
           '
         </button>
-        <button className="modifier col-span-4 pt-0.5" title="return">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="return"
+        >
           <MdOutlineKeyboardReturn />
           return
         </button>
-        <button className="modifier col-span-5 pt-0.5" title="shift">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          title="shift"
+        >
           <BsShiftFill />
           shift
         </button>
-        <button className="key col-span-2" title="z">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="z"
+        >
           Z
         </button>
-        <button className="key col-span-2" title="x">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="x"
+        >
           X
         </button>
-        <button className="key col-span-2" title="c">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="c"
+        >
           C
         </button>
-        <button className="key col-span-2" title="v">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="v"
+        >
           V
         </button>
-        <button className="key col-span-2" title="b">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="b"
+        >
           B
         </button>
-        <button className="key col-span-2" title="n">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="n"
+        >
           N
         </button>
-        <button className="key col-span-2" title="m">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="m"
+        >
           M
         </button>
-        <button className="key col-span-2" title="comma">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="comma"
+        >
           ,
         </button>
-        <button className="key col-span-2" title="period">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="period"
+        >
           .
         </button>
-        <button className="key col-span-2" title="slash">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="slash"
+        >
           /
         </button>
-        <button className="modifier col-span-5 pt-0.5" title="shift">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          title="shift"
+        >
           <BsShiftFill />
           shift
         </button>
-        <button className="modifier col-span-2" title="ctrl">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="ctrl"
+        >
           ctrl
         </button>
-        <button className="modifier col-span-2 pt-0.5" title="Windows logo key">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          title="Windows logo key"
+        >
           <BsWindows />
         </button>
-        <button className="modifier col-span-2" title="alt">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="alt"
+        >
           alt
         </button>
-        <button className="key col-[span_16]" title="space bar"></button>
-        <button className="modifier col-span-2" title="alt">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-[span_16]"
+          title="space bar"
+        ></button>
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="alt"
+        >
           alt
         </button>
-        <button className="modifier col-span-2" title="ctrl">
+        <button
+          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          title="ctrl"
+        >
           ctrl
         </button>
-        <button className="key col-span-1" title="left arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="left arrow"
+        >
           &larr;
         </button>
-        <button className="key col-span-1" title="down arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="down arrow"
+        >
           &darr;
         </button>
-        <button className="key col-span-1" title="up arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="up arrow"
+        >
           &uarr;
         </button>
-        <button className="key col-span-1" title="right arrow">
+        <button
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-1"
+          title="right arrow"
+        >
           &rarr;
         </button>
       </div>
