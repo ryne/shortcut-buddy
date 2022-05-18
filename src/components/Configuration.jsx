@@ -26,7 +26,6 @@ const Configuration = ({ keyboardLayout, setOS }) => {
         <BsWindows className="mr-2" />
         Windows
       </button>
-      <div className="toggle_theme"></div>
     </div>
   );
 };
