@@ -14,7 +14,7 @@ import {
 } from 'react-icons/md';
 
 const Keyboard = ({ keyboardLayout, addShortcut }) => {
-  if (keyboardLayout == 'mac') {
+  if (keyboardLayout == 'Mac') {
     return (
       <div className="keyboard layout_mac grid grid-cols-[repeat(30,23px)] grid-rows-[40px,50px,50px,50px,50px,50px] float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
         <button
@@ -315,7 +315,6 @@ const Keyboard = ({ keyboardLayout, addShortcut }) => {
         </button>
         <button
           onClick={(e) => addShortcut('modifier-1', e.target.title)}
-          disabled
           className="modifier-1 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
           title="caps lock"
         >

@@ -6,9 +6,9 @@ const Configuration = ({ keyboardLayout, setOS }) => {
       className="flex justify-start items-center text-slate-800"
     >
       <button
-        onClick={() => setOS('mac')}
+        onClick={() => setOS('Mac')}
         className={`toggle_os_mac flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 bg-slate-300 dark:bg-slate-700 dark:text-slate-100 ${
-          keyboardLayout === 'mac'
+          keyboardLayout === 'Mac'
             ? ''
             : 'bg-none bg-slate-200 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-500 hover:dark:text-slate-400'
         }`}
@@ -16,9 +16,9 @@ const Configuration = ({ keyboardLayout, setOS }) => {
         <BsApple className="mr-2" /> macOS
       </button>
       <button
-        onClick={() => setOS('win')}
+        onClick={() => setOS('Windows')}
         className={`toggle_os_win flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 bg-slate-300 dark:bg-slate-700 dark:text-slate-100 ${
-          keyboardLayout === 'win'
+          keyboardLayout === 'Windows'
             ? ''
             : 'bg-none bg-slate-200 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-500 hover:dark:text-slate-400'
         }`}
