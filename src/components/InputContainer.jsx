@@ -27,8 +27,6 @@ const InputContainer = () => {
   }, [keyboardShortcut]);
 
   const addShortcut = (priority, key) => {
-    console.log(key);
-    console.log(priority);
     const newShortcut = [...keyboardShortcut];
     const shortcutIndex = newShortcut.findIndex(
       (item) => item.priority === priority
