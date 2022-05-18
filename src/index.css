@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.keyboard button:focus-visible {
+button:focus-visible {
   background-color: rgba(0, 102, 255, 0.1);
 }
 
@@ -46,7 +46,7 @@
     border-color: rgb(71 85 105);
     box-shadow: 0 2px rgb(71 85 105);
   }
-  .keyboard button:focus-visible {
+  button:focus-visible {
     background-color: rgba(0, 102, 255, 0.5);
   }
   .keyboard button:hover {
