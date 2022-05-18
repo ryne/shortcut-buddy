@@ -19,7 +19,7 @@ const Keyboard = ({ keyboardLayout }) => {
       <div className="keyboard layout_mac grid grid-cols-[repeat(30,23px)] grid-rows-[40px,50px,50px,50px,50px,50px] float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
         <button
           className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3"
-          title="Esc"
+          title="esc"
         >
           esc
         </button>
@@ -97,7 +97,7 @@ const Keyboard = ({ keyboardLayout }) => {
         </button>
         <button
           className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-3"
-          title="Power button"
+          title="power button"
         >
           <MdPowerSettingsNew className="text-lg" />
         </button>
@@ -169,13 +169,13 @@ const Keyboard = ({ keyboardLayout }) => {
         </button>
         <button
           className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
-          title="-"
+          title="minus sign"
         >
           -
         </button>
         <button
           className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
-          title="+"
+          title="plus sign"
         >
           +
         </button>
@@ -272,7 +272,8 @@ const Keyboard = ({ keyboardLayout }) => {
           \
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          disabled
+          className="modifier-0 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
           title="caps lock"
         >
           <BsCapslockFill />
@@ -345,14 +346,14 @@ const Keyboard = ({ keyboardLayout }) => {
           '
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
-          title="return"
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="enter"
         >
           <MdOutlineKeyboardReturn />
-          return
+          enter
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          className="modifier-3 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
           title="shift"
         >
           <BsShiftFill />
@@ -419,34 +420,34 @@ const Keyboard = ({ keyboardLayout }) => {
           /
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          className="modifier-3 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
           title="shift"
         >
           <BsShiftFill />
           shift
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          className="modifier-0 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
           title="fn"
         >
           fn
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          className="modifier-1 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
           title="control"
         >
           <ImCtrl />
           ctrl
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          className="modifier-2 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
           title="option"
         >
           <BsOption />
           opt
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          className="modifier-4 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
           title="command"
         >
           <BsCommand />
@@ -457,14 +458,14 @@ const Keyboard = ({ keyboardLayout }) => {
           title="space bar"
         ></button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          className="modifier-4 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
           title="command"
         >
           <BsCommand />
           cmd
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          className="modifier-2 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
           title="option"
         >
           <BsOption />
@@ -645,13 +646,13 @@ const Keyboard = ({ keyboardLayout }) => {
         </button>
         <button
           className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
-          title="-"
+          title="minus sign"
         >
           -
         </button>
         <button
           className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
-          title="+"
+          title="plus sign"
         >
           +
         </button>
@@ -748,7 +749,7 @@ const Keyboard = ({ keyboardLayout }) => {
           \
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          className="modifier-0 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
           title="caps lock"
         >
           <BsCapslockFill />
@@ -821,14 +822,14 @@ const Keyboard = ({ keyboardLayout }) => {
           '
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
-          title="return"
+          className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-4 pt-0.5"
+          title="enter"
         >
           <MdOutlineKeyboardReturn />
-          return
+          enter
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          className="modifier-4 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
           title="shift"
         >
           <BsShiftFill />
@@ -895,26 +896,26 @@ const Keyboard = ({ keyboardLayout }) => {
           /
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
+          className="modifier-4 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-5 pt-0.5"
           title="shift"
         >
           <BsShiftFill />
           shift
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          className="modifier-2 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
           title="ctrl"
         >
           ctrl
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
-          title="Windows logo key"
+          className="modifier-1 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2 pt-0.5"
+          title="windows logo key"
         >
           <BsWindows />
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          className="modifier-3 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
           title="alt"
         >
           alt
@@ -924,13 +925,13 @@ const Keyboard = ({ keyboardLayout }) => {
           title="space bar"
         ></button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          className="modifier-3 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
           title="alt"
         >
           alt
         </button>
         <button
-          className="modifier flex  border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
+          className="modifier-2 flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
           title="ctrl"
         >
           ctrl
