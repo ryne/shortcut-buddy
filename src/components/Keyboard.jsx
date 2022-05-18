@@ -580,7 +580,7 @@ const Keyboard = ({ keyboardLayout, addShortcut }) => {
         <button
           onClick={(e) => addShortcut('key', e.target.title)}
           className="key flex border-[1px] bg-slate-50 shadow-[0_2px_rgb(203,213,225)] border-slate-300 hover:bg-slate-100 hover:shadow-[0_2px_rgb(148,163,184)] hover:border-slate-400 active:bg-slate-200 active:border-slate-400 active:shadow-none dark:bg-slate-700 dark:shadow-[0_2px_rgb(71,85,105)] dark:border-slate-600 dark:hover:bg-slate-600 dark:hover:shadow-[0_2px_rgb(100,116,139)] dark:hover:border-slate-500 dark:active:bg-slate-800 dark:active:border-slate-700 dark:active:shadow-none active:translate-y-[2px] rounded-lg cursor-pointer items-center justify-center flex-col col-span-2"
-          title="Esc"
+          title="esc"
         >
           esc
         </button>
