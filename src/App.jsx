@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import InputContainer from './components/InputContainer';
 import OutputContainer from './components/OutputContainer';
 
