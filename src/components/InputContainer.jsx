@@ -8,18 +8,20 @@ const InputContainer = () => {
   const [keyboardLayout, setKeyboardLayout] = useState(
     localStorage.getItem('keyboardLayout')
   );
-  const [keyboardShortcut, setKeyboardShortcut] = useState([]);
+  const defaultShortcut = [
+    { priority: 'modifier-1', key: '' },
+    { priority: 'modifier-2', key: '' },
+    { priority: 'modifier-3', key: '' },
+    { priority: 'modifier-4', key: '' },
+    { priority: 'key', key: '' },
+  ];
+  const [keyboardShortcut, setKeyboardShortcut] = useState(defaultShortcut);
+
   const [prompt, setPrompt] = useState('');
 
   useEffect(() => {
     setPrompt('');
-    setKeyboardShortcut([
-      { priority: 'modifier-1', key: '' },
-      { priority: 'modifier-2', key: '' },
-      { priority: 'modifier-3', key: '' },
-      { priority: 'modifier-4', key: '' },
-      { priority: 'key', key: '' },
-    ]);
+    setKeyboardShortcut(defaultShortcut);
     keyboardLayout
       ? localStorage.setItem('keyboardLayout', keyboardLayout)
       : setKeyboardLayout('Mac');
@@ -47,6 +49,17 @@ const InputContainer = () => {
     );
   };
 
+  const submitPrompt = () => {
+    if (prompt !== '') {
+      console.log(
+        `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`
+      );
+    }
+    setPrompt('');
+    setKeyboardShortcut(defaultShortcut);
+    console.log(keyboardShortcut);
+  };
+
   return (
     <section
       id="InputContainer"
@@ -61,7 +74,11 @@ const InputContainer = () => {
         keyboardLayout={keyboardLayout}
         addShortcut={(priority, key) => addShortcut(priority, key)}
       />
-      <Prompt keyboardLayout={keyboardLayout} prompt={prompt} />
+      <Prompt
+        keyboardLayout={keyboardLayout}
+        prompt={prompt}
+        submitPrompt={submitPrompt}
+      />
     </section>
   );
 };
