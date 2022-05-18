@@ -6,6 +6,10 @@
   height: 100vh;
 }
 
+button:focus-visible {
+  background-color: rgba(0, 102, 255, 0.1);
+}
+
 .keyboard {
   grid-template-columns: repeat(30, 23px);
   grid-template-rows: 40px 50px 50px 50px 50px 50px;
@@ -23,10 +27,6 @@
   flex-direction: column;
 }
 
-button:focus-visible {
-  background-color: rgba(0, 102, 255, 0.1);
-}
-
 .keyboard button:hover {
   background-color: rgb(241 245 249);
   border: 1px solid rgb(148 163 184);
@@ -41,13 +41,13 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: dark) {
+  button:focus-visible {
+    background-color: rgba(0, 102, 255, 0.5);
+  }
   .keyboard button {
     background-color: rgb(51 65 85);
     border-color: rgb(71 85 105);
     box-shadow: 0 2px rgb(71 85 105);
-  }
-  button:focus-visible {
-    background-color: rgba(0, 102, 255, 0.5);
   }
   .keyboard button:hover {
     background-color: rgb(71 85 105);

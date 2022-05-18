@@ -264,7 +264,7 @@ const Keyboard = ({ keyboardLayout }) => {
     );
   } else {
     return (
-      <div className="keyboard layout_windows grid float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
+      <div className="keyboard layout_win grid float-left p-2 rounded-lg border-slate-300 dark:border-slate-700 border-2 border-b-4 border-solid bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-sm gap-1.5 overflow-x-auto max-w-full">
         <button className="key col-span-2" title="Esc">
           esc
         </button>
