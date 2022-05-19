@@ -5,7 +5,6 @@ import Keyboard from './Keyboard';
 import Prompt from './Prompt';
 
 const InputContainer = ({ submitShortcut }) => {
-  const OPENAPI = process.env.VITE_OPENAI_KEY;
   const defaultShortcut = [
     { priority: 'modifier-1', key: '' },
     { priority: 'modifier-2', key: '' },
@@ -66,7 +65,7 @@ const InputContainer = ({ submitShortcut }) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${OPENAPI}`,
+          Authorization: `Bearer ${import.meta.env.VITE_OPENAI_KEY}`,
         },
         body: JSON.stringify(data),
       })
