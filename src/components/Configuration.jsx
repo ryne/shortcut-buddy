@@ -1,4 +1,9 @@
-import { BsWindows, BsApple } from 'react-icons/bs';
+import {
+  BsWindows,
+  BsApple,
+  BsLightbulbOffFill,
+  BsLightbulbFill,
+} from 'react-icons/bs';
 const Configuration = ({ keyboardLayout, setOS }) => {
   return (
     <div
