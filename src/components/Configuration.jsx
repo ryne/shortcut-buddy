@@ -4,7 +4,7 @@ import {
   BsLightbulbOffFill,
   BsLightbulbFill,
 } from 'react-icons/bs';
-const Configuration = ({ keyboardLayout, setOS }) => {
+const Configuration = ({ keyboardLayout, setOS, lightMode, setLight }) => {
   return (
     <div
       id="Configuration"
@@ -30,6 +30,16 @@ const Configuration = ({ keyboardLayout, setOS }) => {
       >
         <BsWindows className="mr-2" />
         Windows
+      </button>
+      <button
+        onClick={() => setLight(lightMode === 'dark' ? 'light' : 'dark')}
+        className={`toggle_os_win text-sm md:text-base flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg text-slate-400 hover:text-slate-500 dark:text-slate-500 ${
+          lightMode === 'light'
+            ? ''
+            : 'dark:text-slate-500 hover:text-slate-500 hover:dark:text-slate-400'
+        }`}
+      >
+        {lightMode === 'dark' ? <BsLightbulbOffFill /> : <BsLightbulbFill />}
       </button>
     </div>
   );

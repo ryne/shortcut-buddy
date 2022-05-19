@@ -17,6 +17,7 @@ const InputContainer = ({ submitShortcut }) => {
   );
   const [keyboardShortcut, setKeyboardShortcut] = useState(defaultShortcut);
   const [prompt, setPrompt] = useState('');
+  const [lightMode, setLightMode] = useState(localStorage.getItem('theme'));
 
   useEffect(() => {
     setPrompt('');
@@ -50,9 +51,6 @@ const InputContainer = ({ submitShortcut }) => {
 
   const submitPrompt = () => {
     if (prompt !== '') {
-      console.log(
-        `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`
-      );
       const data = {
         prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
         temperature: 0,
@@ -90,6 +88,14 @@ const InputContainer = ({ submitShortcut }) => {
     setKeyboardShortcut(defaultShortcut);
   };
 
+  const setLight = (m) => {
+    setLightMode(m);
+    localStorage.setItem('theme', m);
+    m === 'light'
+      ? document.documentElement.classList.remove('dark')
+      : document.documentElement.classList.add('dark');
+  };
+
   return (
     <section
       id="InputContainer"
@@ -99,6 +105,8 @@ const InputContainer = ({ submitShortcut }) => {
       <Configuration
         keyboardLayout={keyboardLayout}
         setOS={(os) => setKeyboardLayout(os)}
+        lightMode={lightMode}
+        setLight={(m) => setLight(m)}
       />
       <Keyboard
         keyboardLayout={keyboardLayout}
