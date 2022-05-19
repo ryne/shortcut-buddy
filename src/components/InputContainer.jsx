@@ -64,6 +64,7 @@ const InputContainer = ({ submitShortcut }) => {
       };
       fetch('https://api.openai.com/v1/engines/text-davinci-002/completions', {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${OPENAI_KEY}`,
