@@ -5,7 +5,7 @@ const Prompt = ({ keyboardLayout, prompt, submitPrompt, resetPrompt }) => {
       id="Prompt"
       className="flex flex-col justify-center items-center align-center py-6 md:py-8"
     >
-      <p className="text-center text-sm md:text-lg lg:text-2xl font-light text-slate-800 dark:text-slate-100">
+      <p className="text-center p-4 text-base md:text-lg lg:text-2xl font-light text-slate-800 dark:text-slate-100">
         {prompt
           ? `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`
           : `Please select a modifier or character to begin.`}

@@ -12,7 +12,7 @@ const Configuration = ({ keyboardLayout, setOS }) => {
     >
       <button
         onClick={() => setOS('Mac')}
-        className={`toggle_os_mac flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 bg-slate-300 dark:bg-slate-700 dark:text-slate-100 ${
+        className={`toggle_os_mac text-sm md:text-base flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 bg-slate-300 dark:bg-slate-700 dark:text-slate-100 ${
           keyboardLayout === 'Mac'
             ? ''
             : 'bg-none bg-slate-200 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-500 hover:dark:text-slate-400'
@@ -22,7 +22,7 @@ const Configuration = ({ keyboardLayout, setOS }) => {
       </button>
       <button
         onClick={() => setOS('Windows')}
-        className={`toggle_os_win flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 bg-slate-300 dark:bg-slate-700 dark:text-slate-100 ${
+        className={`toggle_os_win text-sm md:text-base flex flex-row items-center py-2 px-4 mx-0.5 rounded-t-lg bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 bg-slate-300 dark:bg-slate-700 dark:text-slate-100 ${
           keyboardLayout === 'Windows'
             ? ''
             : 'bg-none bg-slate-200 dark:bg-slate-800 text-slate-400 dark:text-slate-500 hover:text-slate-500 hover:dark:text-slate-400'

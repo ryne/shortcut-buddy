@@ -93,7 +93,7 @@ const InputContainer = ({ submitShortcut }) => {
   return (
     <section
       id="InputContainer"
-      className="flex flex-col justify-center items-center w-full h-full bg-slate-100 dark:bg-slate-900"
+      className="flex flex-col justify-center items-center w-full h-full 2xl:h-[calc(100vh-160px)] bg-slate-100 dark:bg-slate-900"
     >
       <Header />
       <Configuration

@@ -5,16 +5,17 @@ const OutputContainer = ({ shortcutList }) => {
   useEffect(() => {
     console.log(shortcutList);
     if (shortcutList.length !== 0) {
-      scroller.scrollTo('ShortcutBox', {
-        duration: 2000,
-        delay: 0,
-        smooth: 'easeInOutQuart',
-      });
       scroller.scrollTo('ShortcutBoxTop', {
-        duration: 800,
-        delay: 0,
+        duration: 500,
+        delay: 750,
         smooth: 'easeInOutQuart',
         containerId: 'ShortcutBox',
+        offset: '9999',
+      });
+      scroller.scrollTo('ShortcutBox', {
+        duration: 500,
+        delay: 250,
+        smooth: 'easeInOutQuart',
       });
     }
   }, [shortcutList]);
@@ -25,9 +26,9 @@ const OutputContainer = ({ shortcutList }) => {
     >
       <div
         id="ShortcutBox"
-        className="overflow-y-scroll h-full py-1.5 md:py-3 flex flex-col-reverse items-center"
+        className="overflow-y-auto h-full py-1.5 md:py-3 flex flex-col-reverse items-center justify-center"
       >
-        <div className="ShortcutBoxTop"></div>
+        <div className="ShortcutBoxTop absolute h-0 w-0 top-0"></div>
         {shortcutList.map(({ prompt, id, response }) => {
           return (
             <Shortcut prompt={prompt} id={id} response={response} key={id} />
