@@ -69,6 +69,9 @@ const InputContainer = ({ submitShortcut }) => {
         },
         body: JSON.stringify(data),
       })
+        .catch((error) => {
+          alert(error);
+        })
         .then((response) => response.json())
         .then((data) => {
           submitShortcut({
