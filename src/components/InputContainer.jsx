@@ -5,6 +5,7 @@ import Keyboard from './Keyboard';
 import Prompt from './Prompt';
 
 const InputContainer = ({ submitShortcut }) => {
+  const OPENAPI = process.env.REACT_APP_OPENAI;
   const defaultShortcut = [
     { priority: 'modifier-1', key: '' },
     { priority: 'modifier-2', key: '' },
@@ -65,7 +66,7 @@ const InputContainer = ({ submitShortcut }) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.REACT_APP_OPENAI}`,
+          Authorization: `Bearer ${OPENAPI}`,
         },
         body: JSON.stringify(data),
       })
