@@ -5,7 +5,7 @@ import Keyboard from './Keyboard';
 import Prompt from './Prompt';
 
 const InputContainer = ({ submitShortcut }) => {
-  const OPENAPI = process.env.REACT_APP_OPENAI;
+  const OPENAPI = process.env.VITE_OPENAI_KEY;
   const defaultShortcut = [
     { priority: 'modifier-1', key: '' },
     { priority: 'modifier-2', key: '' },
