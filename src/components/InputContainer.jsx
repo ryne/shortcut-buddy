@@ -27,6 +27,17 @@ const InputContainer = ({ submitShortcut }) => {
       : setKeyboardLayout('Mac');
   }, [keyboardLayout]);
 
+  useEffect(() => {
+    lightMode === 'light'
+      ? document.documentElement.classList.remove('dark')
+      : document.documentElement.classList.add('dark');
+  }, [lightMode]);
+
+  const setLight = (m) => {
+    setLightMode(m);
+    localStorage.setItem('theme', m);
+  };
+
   const addShortcut = (priority, key) => {
     const newShortcut = [...keyboardShortcut];
     const shortcutIndex = newShortcut.findIndex(
@@ -86,14 +97,6 @@ const InputContainer = ({ submitShortcut }) => {
   const resetPrompt = () => {
     setPrompt('');
     setKeyboardShortcut(defaultShortcut);
-  };
-
-  const setLight = (m) => {
-    setLightMode(m);
-    localStorage.setItem('theme', m);
-    m === 'light'
-      ? document.documentElement.classList.remove('dark')
-      : document.documentElement.classList.add('dark');
   };
 
   return (
