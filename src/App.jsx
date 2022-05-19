@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import InputContainer from './components/InputContainer';
 import OutputContainer from './components/OutputContainer';
 
@@ -12,10 +13,16 @@ const App = () => {
     document.documentElement.classList.remove('dark');
   }
 
+  const [shortcutList, setShortcutList] = useState([]);
+  const submitShortcut = (shortcut) => {
+    console.log(shortcut);
+    setShortcutList([...shortcutList, shortcut]);
+  };
+
   return (
     <>
-      <InputContainer />
-      <OutputContainer />
+      <InputContainer submitShortcut={(shortcut) => submitShortcut(shortcut)} />
+      <OutputContainer shortcutList={shortcutList} />
     </>
   );
 };

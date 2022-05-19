@@ -4,10 +4,8 @@ import Configuration from './Configuration';
 import Keyboard from './Keyboard';
 import Prompt from './Prompt';
 
-const InputContainer = () => {
-  const [keyboardLayout, setKeyboardLayout] = useState(
-    localStorage.getItem('keyboardLayout')
-  );
+const InputContainer = ({ submitShortcut }) => {
+  const OPENAI_KEY = process.env.OPENAI_KEY;
   const defaultShortcut = [
     { priority: 'modifier-1', key: '' },
     { priority: 'modifier-2', key: '' },
@@ -15,8 +13,10 @@ const InputContainer = () => {
     { priority: 'modifier-4', key: '' },
     { priority: 'key', key: '' },
   ];
+  const [keyboardLayout, setKeyboardLayout] = useState(
+    localStorage.getItem('keyboardLayout')
+  );
   const [keyboardShortcut, setKeyboardShortcut] = useState(defaultShortcut);
-
   const [prompt, setPrompt] = useState('');
 
   useEffect(() => {
@@ -54,10 +54,38 @@ const InputContainer = () => {
       console.log(
         `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`
       );
+      const data = {
+        prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
+        temperature: 0,
+        max_tokens: 64,
+        top_p: 1.0,
+        frequency_penalty: 0.0,
+        presence_penalty: 0.0,
+      };
+      fetch('https://api.openai.com/v1/engines/text-davinci-002/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${OPENAI_KEY}`,
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          submitShortcut({
+            prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
+            id: data.created,
+            response: data.choices[0].text.replace(/\r?\n|\r/g, ''),
+          });
+        });
     }
     setPrompt('');
     setKeyboardShortcut(defaultShortcut);
-    console.log(keyboardShortcut);
+  };
+
+  const resetPrompt = () => {
+    setPrompt('');
+    setKeyboardShortcut(defaultShortcut);
   };
 
   return (
@@ -78,6 +106,7 @@ const InputContainer = () => {
         keyboardLayout={keyboardLayout}
         prompt={prompt}
         submitPrompt={submitPrompt}
+        resetPrompt={resetPrompt}
       />
     </section>
   );
