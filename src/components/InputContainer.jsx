@@ -5,7 +5,6 @@ import Keyboard from './Keyboard';
 import Prompt from './Prompt';
 
 const InputContainer = ({ submitShortcut }) => {
-  const OPENAI_KEY = process.env.OPENAI_KEY;
   const defaultShortcut = [
     { priority: 'modifier-1', key: '' },
     { priority: 'modifier-2', key: '' },
@@ -64,10 +63,9 @@ const InputContainer = ({ submitShortcut }) => {
       };
       fetch('https://api.openai.com/v1/engines/text-davinci-002/completions', {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${OPENAI_KEY}`,
+          Authorization: `Bearer ${process.env.OPENAI_KEY}`,
         },
         body: JSON.stringify(data),
       })
