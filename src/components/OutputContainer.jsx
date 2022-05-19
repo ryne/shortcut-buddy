@@ -26,7 +26,7 @@ const OutputContainer = ({ shortcutList }) => {
     >
       <div
         id="ShortcutBox"
-        className="overflow-y-auto h-full py-1.5 md:py-3 flex flex-col-reverse items-center justify-center"
+        className="overflow-y-auto h-full py-1.5 md:py-3 flex flex-col-reverse items-center"
       >
         <div className="ShortcutBoxTop absolute h-0 w-0 top-0"></div>
         {shortcutList.map(({ prompt, id, response }) => {
