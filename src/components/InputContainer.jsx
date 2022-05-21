@@ -62,7 +62,7 @@ const InputContainer = ({ submitShortcut }) => {
 
   const submitPrompt = () => {
     if (prompt !== '') {
-      const data = {
+      const payload = {
         prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
         temperature: 0,
         max_tokens: 64,
@@ -76,11 +76,8 @@ const InputContainer = ({ submitShortcut }) => {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${import.meta.env.VITE_OPENAI_KEY}`,
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       })
-        .catch((error) => {
-          alert(error);
-        })
         .then((response) => response.json())
         .then((data) => {
           submitShortcut({
@@ -88,10 +85,12 @@ const InputContainer = ({ submitShortcut }) => {
             id: data.created,
             response: data.choices[0].text.replace(/\r?\n|\r/g, ''),
           });
+        })
+        .catch((error) => {
+          alert(error);
         });
     }
-    setPrompt('');
-    setKeyboardShortcut(defaultShortcut);
+    resetPrompt();
   };
 
   const resetPrompt = () => {
