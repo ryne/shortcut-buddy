@@ -2,4 +2,4 @@
 # Shortcut Buddy
 OpenAI-powered tool for learning keyboard shortcuts. Built on [Vite + ReactJs + TailwindCSS](https://github.com/KrishGarg/vite-react-tailwind-jit-template).
 
-[![View site on Netlify](https://i.imgur.com/OAOx3b9.gif)](https://shortcut-buddy.netlify.app/ "View site on Netlify")
+[![View site on Netlify](https://i.imgur.com/XXoxzrq.gif)](https://shortcut-buddy.netlify.app/ "View site on Netlify")
