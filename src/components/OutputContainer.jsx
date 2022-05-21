@@ -8,14 +8,12 @@ const OutputContainer = ({ shortcutList }) => {
       scroller.scrollTo('ShortcutBoxTop', {
         duration: 500,
         delay: 750,
-        smooth: 'easeInOutQuart',
         containerId: 'ShortcutBox',
         offset: '9999',
       });
       scroller.scrollTo('ShortcutBox', {
         duration: 500,
         delay: 250,
-        smooth: 'easeInOutQuart',
       });
     }
   }, [shortcutList]);
