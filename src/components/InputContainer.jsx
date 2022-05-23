@@ -18,6 +18,7 @@ const InputContainer = ({ submitShortcut }) => {
   const [keyboardShortcut, setKeyboardShortcut] = useState(defaultShortcut);
   const [prompt, setPrompt] = useState('');
   const [lightMode, setLightMode] = useState(localStorage.getItem('theme'));
+  const [pauseInput, setPauseInput] = useState(false);
 
   useEffect(() => {
     setPrompt('');
@@ -39,28 +40,31 @@ const InputContainer = ({ submitShortcut }) => {
   };
 
   const addShortcut = (priority, key) => {
-    const newShortcut = [...keyboardShortcut];
-    const shortcutIndex = newShortcut.findIndex(
-      (item) => item.priority === priority
-    );
-    if (newShortcut[shortcutIndex].key === key) {
-      newShortcut[shortcutIndex].key = '';
-      setKeyboardShortcut(newShortcut);
-    } else {
-      newShortcut[shortcutIndex].key = key;
-      setKeyboardShortcut(newShortcut);
+    if (pauseInput === false) {
+      const newShortcut = [...keyboardShortcut];
+      const shortcutIndex = newShortcut.findIndex(
+        (item) => item.priority === priority
+      );
+      if (newShortcut[shortcutIndex].key === key) {
+        newShortcut[shortcutIndex].key = '';
+        setKeyboardShortcut(newShortcut);
+      } else {
+        newShortcut[shortcutIndex].key = key;
+        setKeyboardShortcut(newShortcut);
+      }
+      setPrompt(
+        newShortcut
+          .map((a) => a.key)
+          .filter((a) => {
+            return a;
+          })
+          .join('-')
+      );
     }
-    setPrompt(
-      newShortcut
-        .map((a) => a.key)
-        .filter((a) => {
-          return a;
-        })
-        .join('-')
-    );
   };
 
   const submitPrompt = () => {
+    setPauseInput(true);
     if (prompt !== '') {
       const payload = {
         prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
@@ -85,8 +89,10 @@ const InputContainer = ({ submitShortcut }) => {
             id: data.created,
             response: data.choices[0].text.replace(/\r?\n|\r/g, ''),
           });
+          setPauseInput(false);
         })
         .catch((error) => {
+          setPauseInput(false);
           alert(error);
         });
     }
@@ -119,6 +125,7 @@ const InputContainer = ({ submitShortcut }) => {
         prompt={prompt}
         submitPrompt={submitPrompt}
         resetPrompt={resetPrompt}
+        pauseInput={pauseInput}
       />
     </section>
   );

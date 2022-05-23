@@ -1,14 +1,26 @@
 import { VscDebugRestart } from 'react-icons/vsc';
-const Prompt = ({ keyboardLayout, prompt, submitPrompt, resetPrompt }) => {
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
+const Prompt = ({
+  keyboardLayout,
+  prompt,
+  submitPrompt,
+  resetPrompt,
+  pauseInput,
+}) => {
   return (
     <div
       id="Prompt"
       className="flex flex-col justify-center items-center align-center py-6 md:py-8"
     >
       <p className="text-center p-4 text-base md:text-lg lg:text-2xl font-light text-slate-800 dark:text-slate-100">
-        {prompt
-          ? `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`
-          : `Please select a modifier or character to begin.`}
+        <span className={pauseInput ? 'hidden' : ''}>
+          {prompt
+            ? `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`
+            : `Please select a modifier or character to begin.`}
+        </span>
+        <span className={pauseInput ? '' : 'hidden'}>
+          <AiOutlineLoading3Quarters className="animate-spin" />
+        </span>
       </p>
       <div className="flex flex-row items-center justify-center items-center mt-2 sm:mt-4 md:mt-6">
         <button
