@@ -18,8 +18,15 @@ const Prompt = ({
             ? `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`
             : `Please select a modifier or character to begin.`}
         </span>
-        <span className={pauseInput ? '' : 'hidden'}>
-          <AiOutlineLoading3Quarters className="animate-spin" /> Processing...
+        <span
+          className={
+            pauseInput
+              ? 'flex flex-row items-center text-blue-500 dark:text-blue-400'
+              : 'hidden'
+          }
+        >
+          <AiOutlineLoading3Quarters className="animate-spin mr-2" />{' '}
+          Processing...
         </span>
       </p>
       <div className="flex flex-row items-center justify-center items-center mt-2 sm:mt-4 md:mt-6">
