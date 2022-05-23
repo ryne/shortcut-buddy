@@ -19,7 +19,7 @@ const Prompt = ({
             : `Please select a modifier or character to begin.`}
         </span>
         <span className={pauseInput ? '' : 'hidden'}>
-          <AiOutlineLoading3Quarters className="animate-spin" />
+          <AiOutlineLoading3Quarters className="animate-spin" /> Processing...
         </span>
       </p>
       <div className="flex flex-row items-center justify-center items-center mt-2 sm:mt-4 md:mt-6">
