@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import InputContainer from './components/InputContainer';
 import OutputContainer from './components/OutputContainer';
 
@@ -16,14 +16,21 @@ const App = () => {
   }
 
   const [shortcutList, setShortcutList] = useState([]);
+  const [openAiKey, setOpenAiKey] = useState('');
+  useEffect(() => {
+    setOpenAiKey(window.prompt('OpenAI API Key'));
+  }, []);
+
   const submitShortcut = (shortcut) => {
-    console.log(shortcut);
     setShortcutList([...shortcutList, shortcut]);
   };
 
   return (
     <>
-      <InputContainer submitShortcut={(shortcut) => submitShortcut(shortcut)} />
+      <InputContainer
+        submitShortcut={(shortcut) => submitShortcut(shortcut)}
+        openAiKey={openAiKey}
+      />
       <OutputContainer shortcutList={shortcutList} />
     </>
   );

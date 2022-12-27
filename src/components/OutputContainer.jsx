@@ -3,7 +3,6 @@ import { scroller } from 'react-scroll';
 import Shortcut from './Shortcut';
 const OutputContainer = ({ shortcutList }) => {
   useEffect(() => {
-    console.log(shortcutList);
     if (shortcutList.length !== 0) {
       scroller.scrollTo('ShortcutBoxTop', {
         duration: 500,

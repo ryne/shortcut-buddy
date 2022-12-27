@@ -4,7 +4,7 @@ import Configuration from './Configuration';
 import Keyboard from './Keyboard';
 import Prompt from './Prompt';
 
-const InputContainer = ({ submitShortcut }) => {
+const InputContainer = ({ submitShortcut, openAiKey }) => {
   const defaultShortcut = [
     { priority: 'modifier-1', key: '' },
     { priority: 'modifier-2', key: '' },
@@ -78,7 +78,7 @@ const InputContainer = ({ submitShortcut }) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${import.meta.env.VITE_OPENAI_KEY}`,
+          Authorization: `Bearer ${openAiKey}`,
         },
         body: JSON.stringify(payload),
       })
