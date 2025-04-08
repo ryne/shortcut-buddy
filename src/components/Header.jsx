@@ -5,7 +5,7 @@ const Header = () => {
         Shortcut Buddy
       </h1>
       <p className="text-sm md:text-base text-center pt-2 text-slate-800 dark:text-slate-200">
-        OpenAI-powered tool for learning keyboard shortcuts.
+        Gemini-powered tool for learning keyboard shortcuts.
       </p>
     </header>
   );

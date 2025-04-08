@@ -1,16 +1,16 @@
-import { useEffect } from 'react';
-import { scroller } from 'react-scroll';
-import Shortcut from './Shortcut';
+import { useEffect } from "react";
+import { scroller } from "react-scroll";
+import Shortcut from "../Shortcut";
 const OutputContainer = ({ shortcutList }) => {
   useEffect(() => {
     if (shortcutList.length !== 0) {
-      scroller.scrollTo('ShortcutBoxTop', {
+      scroller.scrollTo("ShortcutBoxTop", {
         duration: 500,
         delay: 750,
-        containerId: 'ShortcutBox',
-        offset: '9999',
+        containerId: "ShortcutBox",
+        offset: "9999",
       });
-      scroller.scrollTo('ShortcutBox', {
+      scroller.scrollTo("ShortcutBox", {
         duration: 500,
         delay: 250,
       });

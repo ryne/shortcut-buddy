@@ -1,52 +1,53 @@
-import { useState, useEffect } from 'react';
-import Header from './Header';
-import Configuration from './Configuration';
-import Keyboard from './Keyboard';
-import Prompt from './Prompt';
+import { useState, useEffect } from "react";
+import { GoogleGenAI } from "@google/genai";
+import Header from "./Header";
+import Configuration from "./Configuration";
+import Keyboard from "./Keyboard";
+import Prompt from "./Prompt";
 
-const InputContainer = ({ submitShortcut, openAiKey }) => {
+const InputContainer = ({ submitShortcut }) => {
   const defaultShortcut = [
-    { priority: 'modifier-1', key: '' },
-    { priority: 'modifier-2', key: '' },
-    { priority: 'modifier-3', key: '' },
-    { priority: 'modifier-4', key: '' },
-    { priority: 'key', key: '' },
+    { priority: "modifier-1", key: "" },
+    { priority: "modifier-2", key: "" },
+    { priority: "modifier-3", key: "" },
+    { priority: "modifier-4", key: "" },
+    { priority: "key", key: "" },
   ];
   const [keyboardLayout, setKeyboardLayout] = useState(
-    localStorage.getItem('keyboardLayout')
+    localStorage.getItem("keyboardLayout"),
   );
   const [keyboardShortcut, setKeyboardShortcut] = useState(defaultShortcut);
-  const [prompt, setPrompt] = useState('');
-  const [lightMode, setLightMode] = useState(localStorage.getItem('theme'));
+  const [prompt, setPrompt] = useState("");
+  const [lightMode, setLightMode] = useState(localStorage.getItem("theme"));
   const [pauseInput, setPauseInput] = useState(false);
 
   useEffect(() => {
-    setPrompt('');
+    setPrompt("");
     setKeyboardShortcut(defaultShortcut);
     keyboardLayout
-      ? localStorage.setItem('keyboardLayout', keyboardLayout)
-      : setKeyboardLayout('Mac');
+      ? localStorage.setItem("keyboardLayout", keyboardLayout)
+      : setKeyboardLayout("Mac");
   }, [keyboardLayout]);
 
   useEffect(() => {
-    lightMode === 'light'
-      ? document.documentElement.classList.remove('dark')
-      : document.documentElement.classList.add('dark');
+    lightMode === "light"
+      ? document.documentElement.classList.remove("dark")
+      : document.documentElement.classList.add("dark");
   }, [lightMode]);
 
   const setLight = (m) => {
     setLightMode(m);
-    localStorage.setItem('theme', m);
+    localStorage.setItem("theme", m);
   };
 
   const addShortcut = (priority, key) => {
     if (pauseInput === false) {
       const newShortcut = [...keyboardShortcut];
       const shortcutIndex = newShortcut.findIndex(
-        (item) => item.priority === priority
+        (item) => item.priority === priority,
       );
       if (newShortcut[shortcutIndex].key === key) {
-        newShortcut[shortcutIndex].key = '';
+        newShortcut[shortcutIndex].key = "";
         setKeyboardShortcut(newShortcut);
       } else {
         newShortcut[shortcutIndex].key = key;
@@ -58,49 +59,36 @@ const InputContainer = ({ submitShortcut, openAiKey }) => {
           .filter((a) => {
             return a;
           })
-          .join('-')
+          .join("-"),
       );
     }
   };
 
   const submitPrompt = () => {
     setPauseInput(true);
-    if (prompt !== '') {
-      const payload = {
-        prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
-        temperature: 0,
-        max_tokens: 64,
-        top_p: 1.0,
-        frequency_penalty: 0.0,
-        presence_penalty: 0.0,
-      };
-      fetch('https://api.openai.com/v1/engines/text-davinci-002/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${openAiKey}`,
-        },
-        body: JSON.stringify(payload),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          submitShortcut({
-            prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
-            id: data.created,
-            response: data.choices[0].text.replace(/\r?\n|\r/g, ''),
-          });
-          setPauseInput(false);
-        })
-        .catch((error) => {
-          setPauseInput(false);
-          alert(error);
+    if (prompt !== "") {
+      const ai = new GoogleGenAI({
+        apiKey: import.meta.env.VITE_GEMINI_KEY,
+      });
+      async function gemini() {
+        const response = await ai.models.generateContent({
+          model: "gemini-2.0-flash",
+          contents: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}? Please keep the answer short and simple. Don't include the shortcut in the answer.`,
         });
+        submitShortcut({
+          prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
+          id: Date.now(),
+          response: response.text,
+        });
+        setPauseInput(false);
+      }
+      gemini();
     }
     resetPrompt();
   };
 
   const resetPrompt = () => {
-    setPrompt('');
+    setPrompt("");
     setKeyboardShortcut(defaultShortcut);
   };
 
