@@ -68,7 +68,7 @@ const InputContainer = ({ submitShortcut }) => {
     setPauseInput(true);
     if (prompt !== "") {
       const ai = new GoogleGenAI({
-        apiKey: import.meta.env.VITE_GEMINI_KEY,
+        apiKey: process.env.VITE_GEMINI_KEY,
       });
       async function gemini() {
         const response = await ai.models.generateContent({
