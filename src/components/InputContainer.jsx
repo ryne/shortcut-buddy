@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { GoogleGenAI } from "@google/genai";
 import Header from "./Header";
 import Configuration from "./Configuration";
 import Keyboard from "./Keyboard";
@@ -67,24 +66,27 @@ const InputContainer = ({ submitShortcut }) => {
   const submitPrompt = () => {
     setPauseInput(true);
     if (prompt !== "") {
-      const ai = new GoogleGenAI({
-        apiKey: process.env.VITE_GEMINI_KEY,
-      });
-      async function gemini() {
-        const response = await ai.models.generateContent({
-          model: "gemini-2.0-flash",
-          contents: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}? Please keep the answer short and simple. Don't include the shortcut in the answer.`,
+      fetch(
+        `/api/getResponse?prompt=${encodeURIComponent(prompt)}&keyboardLayout=${encodeURIComponent(keyboardLayout)}`,
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          submitShortcut({
+            prompt: data.prompt,
+            id: data.id,
+            response: data.response,
+          });
+          resetPrompt();
+          setPauseInput(false);
+        })
+        .catch((err) => {
+          console.error("API error:", err);
+          resetPrompt();
+          setPauseInput(false);
+          alert("Something went wrong. Please try again.");
         });
-        submitShortcut({
-          prompt: `What does the keyboard shortcut "${prompt}" do on ${keyboardLayout}?`,
-          id: Date.now(),
-          response: response.text,
-        });
-        setPauseInput(false);
-      }
-      gemini();
     }
-    resetPrompt();
   };
 
   const resetPrompt = () => {
