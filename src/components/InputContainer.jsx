@@ -71,7 +71,6 @@ const InputContainer = ({ submitShortcut }) => {
       )
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           submitShortcut({
             prompt: data.prompt,
             id: data.id,
